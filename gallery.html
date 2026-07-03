@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery | Diamond electronics</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-bolt"></i>
+
+          Diamond Electronics
+        </a>
+
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="products.html">Products</a></li>
+
+          <li><a href="services.html">Services</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="gallery.html">Gallery</a></li>
+
+          <li><a href="reviews.html">Reviews</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+
+          <li>
+            <button id="themeToggle">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero small-hero">
+      <div class="hero-content">
+        <h1>Project Gallery</h1>
+
+        <p>Our Installation & Service Works</p>
+      </div>
+    </section>
+
+    <!-- FILTERS -->
+
+    <section class="gallery-section">
+      <h2 class="section-title">Gallery</h2>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="solar">Solar</button>
+
+        <button class="filter-btn" data-filter="battery">Battery</button>
+
+        <button class="filter-btn" data-filter="inverter">Inverter</button>
+
+        <button class="filter-btn" data-filter="shop">Shop</button>
+      </div>
+
+      <!-- GALLERY GRID -->
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="solar">
+          <img src="images/gallery/solar1.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="solar">
+          <img src="images/gallery/solar2.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="battery">
+          <img src="images/gallery/battery1.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="battery">
+          <img src="images/gallery/battery2.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="inverter">
+          <img src="images/gallery/inverter1.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="inverter">
+          <img src="images/gallery/inverter2.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="shop">
+          <img src="images/gallery/shop1.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="shop">
+          <img src="images/gallery/shop2.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="solar">
+          <img src="images/gallery/solar3.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="battery">
+          <img src="images/gallery/battery3.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="inverter">
+          <img src="images/gallery/inverter3.jpg" />
+        </div>
+
+        <div class="gallery-item" data-category="shop">
+          <img src="images/gallery/shop3.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+      <span class="close-lightbox"> &times; </span>
+
+      <img id="lightbox-img" />
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-content">
+        <h2>PowerTech Energy Solutions</h2>
+
+        <p>Inverters | Batteries | Solar Panels</p>
+
+        <div class="socials">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+
+        <p>© 2026 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/919442442144" class="whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="gallery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

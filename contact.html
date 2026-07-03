@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Diamond electronics</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-bolt"></i>
+
+          Diamond Electronics
+        </a>
+
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="products.html">Products</a></li>
+
+          <li><a href="services.html">Services</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="gallery.html">Gallery</a></li>
+
+          <li><a href="reviews.html">Reviews</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+
+          <li>
+            <button id="themeToggle">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero small-hero">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+
+        <p>Get a Free Quote Today</p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info glass">
+          <h2>Get In Touch</h2>
+
+          <p>
+            We provide Inverters, Batteries, Solar Panels, Installation, Repair
+            and AMC Services.
+          </p>
+
+          <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
+
+            <span>+91 9442442144</span>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+
+            <span>Diamondelectronics@gmail.com</span>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span> kallakurichi, Tamil Nadu, India </span>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <span> WhatsApp Support Available </span>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="contact-form glass">
+          <h2>Send Enquiry</h2>
+
+          <form id="enquiryForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+
+            <input type="email" id="email" placeholder="Your Email" required />
+
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+
+            <select id="product">
+              <option value="">Select Product</option>
+
+              <option>Inverter</option>
+
+              <option>Battery</option>
+
+              <option>Solar Panel</option>
+
+              <option>Car Battery</option>
+
+              <option>Bike Battery</option>
+
+              <option>Installation Service</option>
+
+              <option>Repair Service</option>
+            </select>
+
+            <textarea
+              id="message"
+              rows="6"
+              placeholder="Enter Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUCCESS POPUP -->
+
+    <div id="successPopup" class="success-popup">
+      <div class="popup-content">
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h2>Enquiry Sent Successfully</h2>
+
+        <p>Our team will contact you shortly.</p>
+
+        <button onclick="closePopup()" class="btn">Close</button>
+      </div>
+    </div>
+
+    <!-- WHATSAPP BUTTON -->
+
+    <a href="https://wa.me/9442442144" class="whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="contact.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

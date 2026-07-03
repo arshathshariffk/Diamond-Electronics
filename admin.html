@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="admin-container">
+      <!-- SIDEBAR -->
+
+      <div class="sidebar">
+        <h2>Diamond electronics Admin</h2>
+
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-chart-line"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-box"></i>
+              Products
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-users"></i>
+              Customers
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-envelope"></i>
+              Enquiries
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MAIN CONTENT -->
+
+      <div class="admin-content">
+        <h1>Dashboard</h1>
+
+        <!-- STATS -->
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h2 id="totalProducts">0</h2>
+            <p>Total Products</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>5000+</h2>
+            <p>Customers</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>1200+</h2>
+            <p>Enquiries</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>₹12L+</h2>
+            <p>Revenue</p>
+          </div>
+        </div>
+
+        <!-- ADD PRODUCT -->
+
+        <div class="product-form">
+          <h2>Add Product</h2>
+
+          <form id="productForm">
+            <input
+              type="text"
+              id="productName"
+              placeholder="Product Name"
+              required
+            />
+
+            <input type="text" id="productPrice" placeholder="Price" required />
+
+            <input
+              type="text"
+              id="productCategory"
+              placeholder="Category"
+              required
+            />
+
+            <button type="submit" class="btn">Add Product</button>
+          </form>
+        </div>
+
+        <!-- PRODUCT TABLE -->
+
+        <div class="product-table">
+          <h2>Manage Products</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody id="productTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
